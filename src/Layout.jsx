@@ -7,8 +7,10 @@ import { Outlet } from "react-router"
 import img1 from "./assets/Logo (7).png"
 import Button from "@mui/material/Button"
 import Header from "./pages/Header"
+import { useTranslation } from "react-i18next";
 
 export default function Layout() {
+  const { t } = useTranslation();
   return (
     <>
       <Header />
@@ -20,51 +22,51 @@ export default function Layout() {
         <img className="ml-[42%]!" src={img1} alt="" /><br />
         <div className="flex flex-col sm:flex-row items-start justify-between">
           <div>
-            <p>Buy</p><br /><br />
-            <p className="mb-3!">Apartment in Dubai</p>
-            <p className="mb-3!">House in Dubai</p>
-            <p className="mb-3!">Apartments in Dubai</p>
-            <p className="mb-3!">Loft in Dubai</p>
-            <p className="mb-3!">Penthouse in Dubai</p>
-            <p>Villa in Dubai</p>
+            <p>{t('footer.buy')}</p><br /><br />
+            <p className="mb-3!">{t('footer.buy_links.apartment')}</p>
+            <p className="mb-3!">{t('footer.buy_links.house')}</p>
+            <p className="mb-3!">{t('footer.buy_links.apartments')}</p>
+            <p className="mb-3!">{t('footer.buy_links.loft')}</p>
+            <p className="mb-3!">{t('footer.buy_links.penthouse')}</p>
+            <p>{t('footer.buy_links.villa')}</p>
           </div>
           <div>
-            <p>Services</p><br /><br />
-            <p className="mb-3!">Property management in Dubai, UAE</p>
-            <p className="mb-3!">Sell property in Dubai, UAE</p>
-            <p className="mb-3!">Rent property in Dubai, UAE</p>
-            <p className="mb-3!">Investments in Dubai, UAE</p>
-            <p className="mb-3!">Real estate for cryptocurrency in Dubai</p>
-            <p>Moving to Dubai, UAE</p>
+            <p>{t('footer.services')}</p><br /><br />
+            <p className="mb-3!">{t('footer.services_links.management')}</p>
+            <p className="mb-3!">{t('footer.services_links.sell')}</p>
+            <p className="mb-3!">{t('footer.services_links.rent')}</p>
+            <p className="mb-3!">{t('footer.services_links.investments')}</p>
+            <p className="mb-3!">{t('footer.services_links.crypto')}</p>
+            <p>{t('footer.services_links.moving')}</p>
           </div>
           <div>
-            <p>Information</p><br /><br />
-            <p className="mb-3!">Video</p>
-            <p className="mb-3!">House in Dubai</p>
-            <p className="mb-3!">Podcasts</p>
-            <p className="mb-3!">Laws</p>
-            <p className="mb-3!">Questions and answers</p>
-            <p className="mb-3!">Books</p>
-            <p>Articles</p>
+            <p>{t('footer.information')}</p><br /><br />
+            <p className="mb-3!">{t('footer.info_links.video')}</p>
+            <p className="mb-3!">{t('footer.info_links.house')}</p>
+            <p className="mb-3!">{t('footer.info_links.podcasts')}</p>
+            <p className="mb-3!">{t('footer.info_links.laws')}</p>
+            <p className="mb-3!">{t('footer.info_links.qa')}</p>
+            <p className="mb-3!">{t('footer.info_links.books')}</p>
+            <p>{t('footer.info_links.articles')}</p>
           </div>
           <div>
-            <p>About company</p><br /><br />
-            <p className="mb-3!">Jobs</p>
-            <p className="mb-3!">Story</p>
-            <p className="mb-3!">Licenses</p>
-            <p className="mb-3!">Why are we</p>
-            <p>Real estate agency</p>
+            <p>{t('footer.about_company')}</p><br /><br />
+            <p className="mb-3!">{t('footer.about_links.jobs')}</p>
+            <p className="mb-3!">{t('footer.about_links.story')}</p>
+            <p className="mb-3!">{t('footer.about_links.licenses')}</p>
+            <p className="mb-3!">{t('footer.about_links.why')}</p>
+            <p>{t('footer.about_links.agency')}</p>
           </div>
           <div>
-            <p>Contact</p><br /><br />
+            <p>{t('footer.contact')}</p><br /><br />
             <p className="mb-3!">964 Worthington Drive <br /> Dubai, UAE</p>
             <p>dubairealty@mail.com</p><br /><br />
-            <Button variant="contained" sx={{ backgroundColor: 'yellow', color: 'black' }}>Book a consultation</Button>
+            <Button variant="contained" sx={{ backgroundColor: 'yellow', color: 'black' }}>{t('footer.book_consultation')}</Button>
           </div>
         </div>
       </footer><hr className="border-gray-400" />
       <div className="flex items-center justify-between mt-8!">
-        <p>Copyright © 2022 Dubai Realty</p>
+        <p>{t('footer.copyright')}</p>
         <div className="flex items-center gap-5">
           <img src={img2} alt="" />
           <img src={img3} alt="" />

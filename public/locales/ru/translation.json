@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "buy": "Купить",
+    "blog": "Блог",
+    "about": "О компании",
+    "contact": "Контакты",
+    "cat1": "Категория номер один",
+    "apartments_dubai": "Квартиры в Дубае",
+    "cat25": "Категория номер двадцать пять"
+  },
+  "home": {
+    "welcome": "Добро пожаловать домой",
+    "to": "в",
+    "luxury": "Роскошь",
+    "book_consultation": "Записаться на консультацию",
+    "our_expertise": "Наш опыт",
+    "best_apartment": "\"Лучшая квартира в Дубае\" мы найдем вашу мечту",
+    "desc1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel.",
+    "quote": "\"Не ограничивайте себя. Многие люди ограничивают себя тем, что они думают, что могут сделать. Вы можете пойти так далеко, как позволяет ваш разум. То, во что вы верите, помните, вы можете достичь.\"",
+    "mary": "— Мэри Кэй Эш",
+    "desc2": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus.",
+    "questions": "У вас есть вопросы?",
+    "contact_us": "Свяжитесь с нами",
+    "enter_mail": "Введите вашу почту",
+    "send": "Отправить",
+    "useful_articles": "Полезные статьи",
+    "view_all": "Смотреть все статьи",
+    "prev": "ПРЕД",
+    "next": "СЛЕД"
+  },
+  "blog": {
+    "title": "БЛОГ",
+    "add_user": "+ Добавить пользователя",
+    "search": "Поиск...",
+    "actions": "Действия",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "info": "Информация",
+    "upload_image": "Загрузить изображение",
+    "name": "Имя",
+    "description": "Описание",
+    "cancel": "Отмена",
+    "save": "Сохранить"
+  },
+  "contact": {
+    "address": "269 King Str, 05 этаж, Utral House Building, Дубай, ОАЭ.",
+    "email": "Email:",
+    "email_value": "info@sparch.co",
+    "follow": "Мы в соцсетях:",
+    "work_hours": "Время работы:",
+    "work_hours_value": "Понедельник - Пятница : 08:00 - 17:30",
+    "be_in_touch": "Будьте на связи",
+    "with_us": "с нами",
+    "name_ph": "Имя",
+    "email_ph": "Email *",
+    "subject_ph": "Тема",
+    "message_ph": "Сообщение*",
+    "submit": "ОТПРАВИТЬ"
+  },
+  "footer": {
+    "buy": "Купить",
+    "buy_links": {
+      "apartment": "Квартира в Дубае",
+      "house": "Дом в Дубае",
+      "apartments": "Апартаменты в Дубае",
+      "loft": "Лофт в Дубае",
+      "penthouse": "Пентхаус в Дубае",
+      "villa": "Вилла в Дубае"
+    },
+    "services": "Услуги",
+    "services_links": {
+      "management": "Управление недвижимостью в Дубае",
+      "sell": "Продать недвижимость в Дубае",
+      "rent": "Аренда недвижимости в Дубае",
+      "investments": "Инвестиции в Дубае",
+      "crypto": "Недвижимость за криптовалюту в Дубае",
+      "moving": "Переезд в Дубай"
+    },
+    "information": "Информация",
+    "info_links": {
+      "video": "Видео",
+      "house": "Дом в Дубае",
+      "podcasts": "Подкасты",
+      "laws": "Законы",
+      "qa": "Вопросы и ответы",
+      "books": "Книги",
+      "articles": "Статьи"
+    },
+    "about_company": "О компании",
+    "about_links": {
+      "jobs": "Вакансии",
+      "story": "История",
+      "licenses": "Лицензии",
+      "why": "Почему мы",
+      "agency": "Агентство недвижимости"
+    },
+    "contact": "Контакты",
+    "contact_info": {
+      "address": "964 Worthington Drive <br /> Дубай, ОАЭ",
+      "email": "dubairealty@mail.com"
+    },
+    "book_consultation": "Записаться на консультацию",
+    "copyright": "Copyright © 2022 Dubai Realty"
+  }
+}

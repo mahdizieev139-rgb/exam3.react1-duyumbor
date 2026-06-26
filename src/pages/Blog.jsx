@@ -9,21 +9,24 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import { NavLink } from "react-router";
+import { useTranslation } from "react-i18next";
+import { useCallback } from "react";
 
 export default function Blog() {
+  const { t } = useTranslation();
   let api = "https://to-dos-api.softclub.tj/api/to-dos";
 
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
 
-  async function getUser() {
+  const getUser = useCallback(async () => {
     try {
       const { data } = await axios.get(`${api}?query=${search}`);
       setData(data.data);
     } catch (error) {
       console.error(error);
     }
-  }
+  }, [search, api]);
 
   async function deleteUser(id) {
     try {
@@ -36,8 +39,9 @@ export default function Blog() {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     getUser();
-  }, [search]);
+  }, [getUser]);
 
   const id = useId();
   const buttonId = `${id}-button`;
@@ -89,7 +93,7 @@ export default function Blog() {
   return (
     <>
       <div className="flex items-center w-[90%] m-auto! justify-between">
-        <h1 className="text-6xl">BLOG</h1>
+        <h1 className="text-6xl">{t('blog.title')}</h1>
 
         <div className="flex items-center gap-5">
           <Button
@@ -98,7 +102,7 @@ export default function Blog() {
             variant="outlined"
             onClick={handleOpenAddDialog}
           >
-            + Add User
+            {t('blog.add_user')}
           </Button>
 
           <input
@@ -106,7 +110,7 @@ export default function Blog() {
             onChange={(e) => setSearch(e.target.value)}
             className="bg-transparent border border-gray-400 px-10 py-5 w-[500px]"
             type="text"
-            placeholder="Search..."
+            placeholder={t('blog.search')}
           />
         </div>
       </div>
@@ -134,7 +138,7 @@ export default function Blog() {
                 aria-expanded={open}
                 onClick={(e) => handleClick(e, item.id)}
               >
-                Actions
+                {t('blog.actions')}
               </Button>
             </div>
           </div>
@@ -151,11 +155,11 @@ export default function Blog() {
           onClick={() => deleteUser(selectedId)}
           sx={{ color: "red" }}
         >
-          Delete
+          {t('blog.delete')}
         </MenuItem>
 
         <MenuItem onClick={handleClose} sx={{ color: "blue" }}>
-          Edit
+          {t('blog.edit')}
         </MenuItem>
 
         <MenuItem
@@ -163,7 +167,7 @@ export default function Blog() {
           to={`/info/${selectedId}`}
           onClick={handleClose}
         >
-          Info
+          {t('blog.info')}
         </MenuItem>
       </Menu>
 
@@ -171,7 +175,7 @@ export default function Blog() {
         open={openAddDialog}
         onClose={handleCloseAddDialog}
       >
-        <DialogTitle>Add User</DialogTitle>
+        <DialogTitle>{t('blog.add_user')}</DialogTitle>
 
         <DialogContent>
           <form
@@ -181,7 +185,7 @@ export default function Blog() {
           >
             <div className="mt-4">
               <label className="block text-sm text-gray-500 mb-1">
-                Upload Image
+                {t('blog.upload_image')}
               </label>
 
               <input
@@ -195,7 +199,7 @@ export default function Blog() {
             <TextField
               id="name"
               name="Name"
-              label="Name"
+              label={t('blog.name')}
               type="text"
               fullWidth
               variant="standard"
@@ -204,7 +208,7 @@ export default function Blog() {
             <TextField
               id="description"
               name="Description"
-              label="Description"
+              label={t('blog.description')}
               type="text"
               fullWidth
               variant="standard"
@@ -214,14 +218,14 @@ export default function Blog() {
 
         <DialogActions>
           <Button onClick={handleCloseAddDialog}>
-            Cancel
+            {t('blog.cancel')}
           </Button>
 
           <Button
             type="submit"
             form="subscription-form"
           >
-            Save
+            {t('blog.save')}
           </Button>
         </DialogActions>
       </Dialog>

@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "buy": "Buy",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "cat1": "Category number one",
+    "apartments_dubai": "Apartments in Dubai",
+    "cat25": "Category number twenty five"
+  },
+  "home": {
+    "welcome": "Welcome Home",
+    "to": "To",
+    "luxury": "Luxury",
+    "book_consultation": "Book a consultation",
+    "our_expertise": "Our expertise",
+    "best_apartment": "\"The best apartment in Dubai\" we will find your dream",
+    "desc1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel.",
+    "quote": "\"Don't limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.\"",
+    "mary": "— Mary Kay Ash",
+    "desc2": "Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus.",
+    "questions": "Do you have any questions?",
+    "contact_us": "Contact us",
+    "enter_mail": "Enter your mail",
+    "send": "Send",
+    "useful_articles": "Useful articles",
+    "view_all": "View all articles",
+    "prev": "PREV",
+    "next": "NEXT"
+  },
+  "blog": {
+    "title": "BLOG",
+    "add_user": "+ Add User",
+    "search": "Search...",
+    "actions": "Actions",
+    "delete": "Delete",
+    "edit": "Edit",
+    "info": "Info",
+    "upload_image": "Upload Image",
+    "name": "Name",
+    "description": "Description",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "contact": {
+    "address": "269 King Str, 05th Floor, Utral House Building, Dubai, VIC 3000, UAE.",
+    "email": "Email:",
+    "email_value": "info@sparch.co",
+    "follow": "Follow us:",
+    "work_hours": "Work Hours:",
+    "work_hours_value": "Monday - Friday : 08h00 - 17h30",
+    "be_in_touch": "Be in touch",
+    "with_us": "with us",
+    "name_ph": "Name",
+    "email_ph": "Email *",
+    "subject_ph": "Subject",
+    "message_ph": "Message*",
+    "submit": "SUBMIT"
+  },
+  "footer": {
+    "buy": "Buy",
+    "buy_links": {
+      "apartment": "Apartment in Dubai",
+      "house": "House in Dubai",
+      "apartments": "Apartments in Dubai",
+      "loft": "Loft in Dubai",
+      "penthouse": "Penthouse in Dubai",
+      "villa": "Villa in Dubai"
+    },
+    "services": "Services",
+    "services_links": {
+      "management": "Property management in Dubai, UAE",
+      "sell": "Sell property in Dubai, UAE",
+      "rent": "Rent property in Dubai, UAE",
+      "investments": "Investments in Dubai, UAE",
+      "crypto": "Real estate for cryptocurrency in Dubai",
+      "moving": "Moving to Dubai, UAE"
+    },
+    "information": "Information",
+    "info_links": {
+      "video": "Video",
+      "house": "House in Dubai",
+      "podcasts": "Podcasts",
+      "laws": "Laws",
+      "qa": "Questions and answers",
+      "books": "Books",
+      "articles": "Articles"
+    },
+    "about_company": "About company",
+    "about_links": {
+      "jobs": "Jobs",
+      "story": "Story",
+      "licenses": "Licenses",
+      "why": "Why are we",
+      "agency": "Real estate agency"
+    },
+    "contact": "Contact",
+    "contact_info": {
+      "address": "964 Worthington Drive <br /> Dubai, UAE",
+      "email": "dubairealty@mail.com"
+    },
+    "book_consultation": "Book a consultation",
+    "copyright": "Copyright © 2022 Dubai Realty"
+  }
+}

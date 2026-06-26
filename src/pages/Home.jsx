@@ -9,8 +9,10 @@ import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite
 import CardFooter from "./shared/CardFooter";
 import SwiperFooter from "./shared/SwiperFooter";
 import Accordions from "./shared/Accordions";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   const [showVideo, setShowVideo] = useState(false);
 
   const handlePlay = () => {
@@ -23,18 +25,18 @@ export default function Home() {
           <div className=" border-l-2 border-t-2 border-b-2 border-yellow-300/70 p-8 pt-12 pb-12 relative">
             <span className="text-xs tracking-widest uppercase opacity-60 block mb-2">Lorem Ipsum</span>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Welcome Home <br />
-              <span className="text-yellow-400">To</span> Luxury
+              {t('home.welcome')} <br />
+              <span className="text-yellow-400">{t('home.to')}</span> {t('home.luxury')}
             </h1>
             <a href="#" className="inline-block mt-6 text-sm font-semibold tracking-wider hover:text-yellow-400 transition-colors">
-              Book a consultation &rarr;
+              {t('home.book_consultation')} &rarr;
             </a>
           </div>
 
           <div className="mt-6 flex gap-4 text-xs font-bold tracking-widest opacity-80">
-            <button className="hover:text-yellow-400">PREV</button>
+            <button className="hover:text-yellow-400">{t('home.prev')}</button>
             <span>|</span>
-            <button className="hover:text-yellow-400">NEXT</button>
+            <button className="hover:text-yellow-400">{t('home.next')}</button>
           </div>
         </div>
 
@@ -66,9 +68,9 @@ export default function Home() {
       <Card />
 
       <div className="mt-20! ml-5! sm:ml-[30%]!">
-        <p className="text-yellow-500">Our expertise</p><br />
-        <p className="text-4xl sm:text-6xl font-medium">"The best apartment <br /> in Dubai" we will find <br /> your dream</p><br />
-        <p className="w-[350px] sm:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className="text-yellow-500">{t('home.our_expertise')}</p><br />
+        <p className="text-4xl sm:text-6xl font-medium">{t('home.best_apartment')}</p><br />
+        <p className="w-[350px] sm:w-[600px]">{t('home.desc1')}</p>
       </div><br /><br /><br />
 
 
@@ -110,10 +112,9 @@ export default function Home() {
 
       <div className="w-[300px] sm:w-[750px] m-auto! my-12! p-8 md:p-14 border border-[#fcd34d]/40 rounded-sm">
         <p className="text-white text-base md:text-xl font-normal leading-relaxed tracking-wide text-left">
-          "Don't limit yourself. Many people limit themselves to what they think they can do.
-          You can go as far as your mind lets you. What you believe, remember, you can achieve."
+          {t('home.quote')}
           <span className="text-[#fcd34d] ml-2 font-medium">
-            — Mary Kay Ash
+            {t('home.mary')}
           </span>
         </p>
       </div>
@@ -121,15 +122,11 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-8 justify-center ml-5! sm:ml-0!">
         <div>
           <img className="w-[350px] sm:w-[550px]" src={img2} alt="" /><br />
-          <p className="w-[350px] sm:w-[550px]">Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor.
-            In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra.
-            Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+          <p className="w-[350px] sm:w-[550px]">{t('home.desc2')}</p>
         </div>
         <div>
           <img className="w-[350px] sm:w-[550px]" src={img2} alt="" /><br />
-          <p className="w-[350px] sm:w-[550px]">Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor.
-            In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra.
-            Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+          <p className="w-[350px] sm:w-[550px]">{t('home.desc2')}</p>
         </div>
       </div><br /><br />
 
@@ -146,18 +143,18 @@ export default function Home() {
         alignItems: 'center'
       }}>
         <div className="relative pt-20! z-100 w-[70000%] text-center h-[400px] sm:h-[400px] bg-yellow-500/80">
-          <p className='w-[300px] sm:w-[700px] font-medium m-auto! text-black'>Do you have any questions?</p>
-          <h1 className='w-[300px] sm:w-[700px] m-auto! text-6xl sm:text-8xl font-bold text-black'>Contact us</h1><br />
+          <p className='w-[300px] sm:w-[700px] font-medium m-auto! text-black'>{t('home.questions')}</p>
+          <h1 className='w-[300px] sm:w-[700px] m-auto! text-6xl sm:text-8xl font-bold text-black'>{t('home.contact_us')}</h1><br />
           <div>
-            <input type="text" className="bg-white text-black py-5 px-5 w-[370px]" placeholder="Enter your mail" />
-            <Button variant="contained" sx={{ backgroundColor: 'black', py: 2.5, marginTop: '-5px', px: 5 }}>Send</Button>
+            <input type="text" className="bg-white text-black py-5 px-5 w-[370px]" placeholder={t('home.enter_mail')} />
+            <Button variant="contained" sx={{ backgroundColor: 'black', py: 2.5, marginTop: '-5px', px: 5 }}>{t('home.send')}</Button>
           </div>
         </div>
       </div><br /><br /><br />
 
       <div className='flex flex-col sm:flex-row items-center justify-between w-[100%] sm:w-[50%] m-auto!'>
-        <p className="text-5xl">Useful articles</p>
-        <p>View all articles <ArrowForwardIosIcon /></p>
+        <p className="text-5xl">{t('home.useful_articles')}</p>
+        <p>{t('home.view_all')} <ArrowForwardIosIcon /></p>
       </div>
 
       <CardFooter />
